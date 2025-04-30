@@ -18,6 +18,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class Category {
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID categoryId;
 
     @NotBlank
